@@ -40,7 +40,10 @@ version = "1.0"
 default_features = false
 
 [features]
-default = ["proc-macro"]
+default = ["proc-macro","mesalock_sgx"]
 nightly = []
 proc-macro = []
 span-locations = []
+mesalock_sgx = ["sgx_tstd"]
+
+
