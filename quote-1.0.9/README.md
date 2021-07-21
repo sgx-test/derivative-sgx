@@ -102,9 +102,9 @@ does not produce a trailing comma. This matches the behavior of delimiters in
 
 The `quote!` macro evaluates to an expression of type
 `proc_macro2::TokenStream`. Meanwhile Rust procedural macros are expected to
-return the type `proc_macro::TokenStream`.
+return the type `proc_macro2::TokenStream`.
 
-The difference between the two types is that `proc_macro` types are entirely
+The difference between the two types is that `proc_macro2` types are entirely
 specific to procedural macros and cannot ever exist in code outside of a
 procedural macro, while `proc_macro2` types may exist anywhere including tests
 and non-macro code like main.rs and build.rs. This is why even the procedural
@@ -113,7 +113,7 @@ libraries are unit testable and accessible in non-macro contexts.
 
 There is a [`From`]-conversion in both directions so returning the output of
 `quote!` from a procedural macro usually looks like `tokens.into()` or
-`proc_macro::TokenStream::from(tokens)`.
+`proc_macro2::TokenStream::from(tokens)`.
 
 [`From`]: https://doc.rust-lang.org/std/convert/trait.From.html
 

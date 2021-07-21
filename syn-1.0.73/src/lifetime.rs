@@ -1,3 +1,4 @@
+use std::prelude::v1::*;
 use proc_macro2::{Ident, Span};
 use std::cmp::Ordering;
 use std::fmt::{self, Display};

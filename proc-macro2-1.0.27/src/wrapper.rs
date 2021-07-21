@@ -7,7 +7,7 @@ use std::panic;
 #[cfg(super_unstable)]
 use std::path::PathBuf;
 use std::str::FromStr;
-
+use std::prelude::v1::*;
 #[derive(Clone)]
 pub(crate) enum TokenStream {
     Compiler(DeferredTokenStream),

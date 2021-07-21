@@ -1,7 +1,7 @@
 use proc_macro2;
 use syn;
 use syn::spanned::Spanned;
-
+use std::prelude::v1::*;
 /// Represent the `derivative` attributes on the input type (`struct`/`enum`).
 #[derive(Debug, Default)]
 pub struct Input {

@@ -1,7 +1,7 @@
 use proc_macro2::{Ident, Span};
 use std::borrow::Cow;
 use std::fmt;
-
+use std::prelude::v1::*;
 /// Specialized formatting trait used by `format_ident!`.
 ///
 /// [`Ident`] arguments formatted using this trait will have their `r#` prefix

@@ -106,6 +106,7 @@
 /// let upper_hex = format_ident!("Id_{:X}", num);
 /// assert_eq!(upper_hex, "Id_A");
 /// ```
+use std::prelude::v1::*;
 #[macro_export]
 macro_rules! format_ident {
     ($fmt:expr) => {

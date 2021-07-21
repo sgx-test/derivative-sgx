@@ -1,3 +1,4 @@
+use std::prelude::v1::*;
 #[cfg(feature = "parsing")]
 use crate::lookahead;
 #[cfg(feature = "parsing")]

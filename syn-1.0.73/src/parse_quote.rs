@@ -80,7 +80,7 @@ macro_rules! parse_quote {
         )
     };
 }
-
+use std::prelude::v1::*;
 ////////////////////////////////////////////////////////////////////////////////
 // Can parse any type that implements Parse.
 

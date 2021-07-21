@@ -6,7 +6,7 @@ use matcher;
 use paths;
 use syn;
 use utils;
-
+use std::prelude::v1::*;
 pub fn derive(input: &ast::Input) -> proc_macro2::TokenStream {
     let hasher_trait_path = hasher_trait_path();
     let hash_trait_path = hash_trait_path();

@@ -1,7 +1,7 @@
 use std::panic::{self, PanicInfo};
 use std::sync::atomic::*;
 use std::sync::Once;
-
+use std::prelude::v1::*;
 static WORKS: AtomicUsize = AtomicUsize::new(0);
 static INIT: Once = Once::new();
 

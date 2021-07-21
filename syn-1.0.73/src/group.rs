@@ -2,7 +2,7 @@ use crate::error::Result;
 use crate::parse::ParseBuffer;
 use crate::token;
 use proc_macro2::{Delimiter, Span};
-
+use std::prelude::v1::*;
 // Not public API.
 #[doc(hidden)]
 pub struct Parens<'a> {

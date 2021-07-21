@@ -1,7 +1,7 @@
 use std::marker::PhantomData;
 use std::panic::{RefUnwindSafe, UnwindSafe};
 use std::rc::Rc;
-
+use std::prelude::v1::*;
 // Zero sized marker with the correct set of autotrait impls we want all proc
 // macro types to have.
 pub(crate) type Marker = PhantomData<ProcMacroAutoTraits>;

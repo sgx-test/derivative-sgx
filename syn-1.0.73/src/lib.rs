@@ -312,6 +312,8 @@ extern crate proc_macro;
 extern crate proc_macro2;
 extern crate unicode_xid;
 
+use std::prelude::v1::*;
+
 #[cfg(feature = "printing")]
 extern crate quote;
 

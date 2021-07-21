@@ -2,7 +2,7 @@ use super::*;
 use crate::punctuated::Punctuated;
 use proc_macro2::TokenStream;
 use std::iter;
-
+use std::prelude::v1::*;
 #[cfg(feature = "parsing")]
 use crate::parse::{Parse, ParseBuffer, ParseStream, Parser, Result};
 #[cfg(feature = "parsing")]

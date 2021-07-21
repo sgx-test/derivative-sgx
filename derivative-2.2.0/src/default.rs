@@ -4,7 +4,7 @@ use ast;
 use attr;
 use syn;
 use utils;
-
+use std::prelude::v1::*;
 /// Derive `Default` for `input`.
 pub fn derive(input: &ast::Input, default: &attr::InputDefault) -> proc_macro2::TokenStream {
     fn make_variant_data(

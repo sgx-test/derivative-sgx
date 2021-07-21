@@ -87,7 +87,7 @@
 //! [Parsing]: crate::parse::ParseBuffer::parse()
 //! [Printing]: https://docs.rs/quote/1.0/quote/trait.ToTokens.html
 //! [`Span`]: https://docs.rs/proc-macro2/1.0/proc_macro2/struct.Span.html
-
+use std::prelude::v1::*;
 use self::private::WithSpan;
 #[cfg(feature = "parsing")]
 use crate::buffer::Cursor;

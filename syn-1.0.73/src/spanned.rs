@@ -81,7 +81,7 @@
 //! needing the unstable `join`.
 //!
 //! [`syn::Error::new_spanned`]: crate::Error::new_spanned
-
+use std::prelude::v1::*;
 use proc_macro2::Span;
 use quote::spanned::Spanned as ToTokens;
 

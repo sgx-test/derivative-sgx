@@ -31,7 +31,7 @@ use std::ops::{Index, IndexMut};
 use std::option;
 use std::slice;
 use std::vec;
-
+use std::prelude::v1::*;
 #[cfg(feature = "parsing")]
 use crate::parse::{Parse, ParseStream, Result};
 #[cfg(feature = "parsing")]

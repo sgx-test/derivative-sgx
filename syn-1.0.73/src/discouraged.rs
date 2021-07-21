@@ -1,7 +1,7 @@
 //! Extensions to the parsing API with niche applicability.
 
 use super::*;
-
+use std::prelude::v1::*;
 /// Extensions to the `ParseStream` API to support speculative parsing.
 pub trait Speculative {
     /// Advance this parse stream to the position of a forked parse stream.

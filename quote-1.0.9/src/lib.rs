@@ -89,6 +89,8 @@
     clippy::module_name_repetitions
 )]
 
+#![no_std]
+
 #![cfg_attr(all(feature = "mesalock_sgx", not(target_env = "sgx")), no_std)]
 #![cfg_attr(all(target_env = "sgx", target_vendor = "mesalock"), feature(rustc_private))]
 
@@ -96,11 +98,13 @@
 #[macro_use]
 extern crate sgx_tstd as std;
 
+use std::prelude::v1::*;
+
 #[cfg(all(
     not(all(target_arch = "wasm32", target_os = "unknown")),
     feature = "proc-macro"
 ))]
-extern crate proc_macro;
+extern crate proc_macro2;
 
 mod ext;
 mod format;
@@ -126,7 +130,7 @@ pub mod spanned;
 /// [`proc_macro2::TokenStream`].
 ///
 /// Note: for returning tokens to the compiler in a procedural macro, use
-/// `.into()` on the result to convert to [`proc_macro::TokenStream`].
+/// `.into()` on the result to convert to [`proc_macro2::TokenStream`].
 ///
 /// [`TokenStream`]: https://docs.rs/proc-macro2/1.0/proc_macro2/struct.TokenStream.html
 ///
@@ -175,9 +179,9 @@ pub mod spanned;
 ///
 /// The macro evaluates to an expression of type `proc_macro2::TokenStream`.
 /// Meanwhile Rust procedural macros are expected to return the type
-/// `proc_macro::TokenStream`.
+/// `proc_macro2::TokenStream`.
 ///
-/// The difference between the two types is that `proc_macro` types are entirely
+/// The difference between the two types is that `proc_macro2` types are entirely
 /// specific to procedural macros and cannot ever exist in code outside of a
 /// procedural macro, while `proc_macro2` types may exist anywhere including
 /// tests and non-macro code like main.rs and build.rs. This is why even the
@@ -187,7 +191,7 @@ pub mod spanned;
 ///
 /// There is a [`From`]-conversion in both directions so returning the output of
 /// `quote!` from a procedural macro usually looks like `tokens.into()` or
-/// `proc_macro::TokenStream::from(tokens)`.
+/// `proc_macro2::TokenStream::from(tokens)`.
 ///
 /// [`From`]: https://doc.rust-lang.org/std/convert/trait.From.html
 ///
@@ -205,11 +209,11 @@ pub mod spanned;
 ///
 /// ```
 /// # #[cfg(any())]
-/// extern crate proc_macro;
+/// extern crate proc_macro2;
 /// # extern crate proc_macro2;
 ///
 /// # #[cfg(any())]
-/// use proc_macro::TokenStream;
+/// use proc_macro2::TokenStream;
 /// # use proc_macro2::TokenStream;
 /// use quote::quote;
 ///

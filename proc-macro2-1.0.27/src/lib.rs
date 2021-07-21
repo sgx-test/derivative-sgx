@@ -94,6 +94,8 @@ extern crate sgx_tstd as std;
 #[cfg(use_proc_macro)]
 extern crate proc_macro;
 
+use std::prelude::v1::*;
+
 mod marker;
 mod parse;
 

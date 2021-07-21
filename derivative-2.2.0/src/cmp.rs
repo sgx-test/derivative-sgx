@@ -7,7 +7,7 @@ use paths;
 use proc_macro2;
 use syn;
 use utils;
-
+use std::prelude::v1::*;
 /// Derive `Eq` for `input`.
 pub fn derive_eq(input: &ast::Input) -> proc_macro2::TokenStream {
     let name = &input.ident;

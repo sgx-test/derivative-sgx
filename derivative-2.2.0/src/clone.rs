@@ -5,7 +5,7 @@ use attr;
 use matcher;
 use syn;
 use utils;
-
+use std::prelude::v1::*;
 /// Derive `Copy` for `input`.
 pub fn derive_copy(input: &ast::Input) -> proc_macro2::TokenStream {
     let name = &input.ident;

@@ -1,7 +1,7 @@
 use super::*;
 use crate::punctuated::Punctuated;
 use proc_macro2::TokenStream;
-
+use std::prelude::v1::*;
 ast_enum_of_structs! {
     /// A pattern in a local binding, function signature, match expression, or
     /// various other places.

@@ -7,7 +7,7 @@ pub use std::hash::{Hash, Hasher};
 pub use std::marker::Copy;
 pub use std::option::Option::{None, Some};
 pub use std::result::Result::{Err, Ok};
-
+use std::prelude::v1::*;
 #[cfg(feature = "printing")]
 pub extern crate quote;
 

@@ -6,7 +6,7 @@ use matcher;
 use syn;
 use syn::spanned::Spanned;
 use utils;
-
+use std::prelude::v1::*;
 pub fn derive(input: &ast::Input) -> proc_macro2::TokenStream {
     let debug_trait_path = debug_trait_path();
     let fmt_path = fmt_path();

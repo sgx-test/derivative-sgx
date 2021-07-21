@@ -86,6 +86,7 @@
 ///     }
 /// }
 /// ```
+use std::prelude::v1::*;
 #[macro_export]
 macro_rules! custom_keyword {
     ($ident:ident) => {

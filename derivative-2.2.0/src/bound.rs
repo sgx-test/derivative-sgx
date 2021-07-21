@@ -14,7 +14,7 @@ use ast;
 use attr;
 use std::collections::HashSet;
 use syn::{self, visit, GenericParam};
-
+use std::prelude::v1::*;
 // use internals::ast::Item;
 // use internals::attr;
 

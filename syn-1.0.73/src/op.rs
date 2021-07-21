@@ -1,3 +1,4 @@
+use std::prelude::v1::*;
 ast_enum! {
     /// A binary operator: `+`, `+=`, `&`.
     ///

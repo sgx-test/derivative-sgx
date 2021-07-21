@@ -6,7 +6,7 @@ use proc_macro2::{Delimiter, Group, Span, TokenTree};
 
 #[cfg(feature = "parsing")]
 use crate::parse::{Parse, ParseStream, Parser, Result};
-
+use std::prelude::v1::*;
 ast_struct! {
     /// A macro invocation: `println!("{}", mac)`.
     ///

@@ -1,6 +1,6 @@
 use super::*;
 use crate::punctuated::Punctuated;
-
+use std::prelude::v1::*;
 ast_struct! {
     /// A path at which a named item is exported (e.g. `std::collections::HashMap`).
     ///

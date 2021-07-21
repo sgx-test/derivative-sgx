@@ -186,6 +186,8 @@
 #[path = "discouraged.rs"]
 pub mod discouraged;
 
+use std::prelude::v1::*;
+
 use crate::buffer::{Cursor, TokenBuffer};
 use crate::error;
 use crate::lookahead;

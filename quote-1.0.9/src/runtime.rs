@@ -4,6 +4,8 @@ use std::ops::BitOr;
 
 pub use proc_macro2::*;
 
+use std::prelude::v1::*;
+
 pub struct HasIterator; // True
 pub struct ThereIsNoIteratorInRepetition; // False
 
@@ -42,6 +44,7 @@ impl BitOr<HasIterator> for HasIterator {
 /// whichever impl happens to be applicable. Calling that method repeatedly on
 /// the returned value should be idempotent.
 pub mod ext {
+    use std::prelude::v1::*;
     use super::RepInterp;
     use super::{HasIterator as HasIter, ThereIsNoIteratorInRepetition as DoesNotHaveIter};
     use crate::ToTokens;

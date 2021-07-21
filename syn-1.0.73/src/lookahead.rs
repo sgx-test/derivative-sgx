@@ -5,7 +5,7 @@ use crate::span::IntoSpans;
 use crate::token::Token;
 use proc_macro2::{Delimiter, Span};
 use std::cell::RefCell;
-
+use std::prelude::v1::*;
 /// Support for checking the next token in a stream to decide how to parse.
 ///
 /// An important advantage over [`ParseStream::peek`] is that here we

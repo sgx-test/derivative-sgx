@@ -7,7 +7,7 @@ use crate::parse::{Parse, ParseStream, Result};
 #[cfg(feature = "parsing")]
 use crate::token::Token;
 use unicode_xid::UnicodeXID;
-
+use std::prelude::v1::*;
 pub use proc_macro2::Ident;
 
 #[cfg(feature = "parsing")]

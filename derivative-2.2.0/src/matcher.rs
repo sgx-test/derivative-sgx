@@ -13,7 +13,7 @@ use syn;
 use ast;
 use attr;
 use quote;
-
+use std::prelude::v1::*;
 /// The type of binding to use when generating a pattern.
 #[derive(Debug, Copy, Clone)]
 pub enum BindingStyle {

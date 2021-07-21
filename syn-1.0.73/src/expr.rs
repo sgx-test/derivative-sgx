@@ -10,7 +10,7 @@ use std::fmt::{self, Display};
 use std::hash::{Hash, Hasher};
 #[cfg(feature = "parsing")]
 use std::mem;
-
+use std::prelude::v1::*;
 ast_enum_of_structs! {
     /// A Rust expression.
     ///

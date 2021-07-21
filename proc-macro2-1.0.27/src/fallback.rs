@@ -14,7 +14,7 @@ use std::path::PathBuf;
 use std::str::FromStr;
 use std::vec;
 use unicode_xid::UnicodeXID;
-
+use std::prelude::v1::*;
 /// Force use of proc-macro2's fallback implementation of the API for now, even
 /// if the compiler's implementation is available.
 pub fn force() {

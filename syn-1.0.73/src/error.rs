@@ -11,6 +11,8 @@ use std::iter::FromIterator;
 use std::slice;
 use std::vec;
 
+use std::prelude::v1::*;
+
 /// The result of a Syn parser.
 pub type Result<T> = std::result::Result<T, Error>;
 

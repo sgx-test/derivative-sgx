@@ -5,6 +5,8 @@ use std::fmt::{self, Debug};
 #[cfg(all(feature = "printing", feature = "extra-traits"))]
 use std::hash::{Hash, Hasher};
 
+use std::prelude::v1::*;
+
 ast_struct! {
     /// Lifetimes and type parameters attached to a declaration of a function,
     /// enum, trait, etc.

@@ -1,6 +1,6 @@
 use proc_macro2::{Delimiter, TokenStream, TokenTree};
 use std::hash::{Hash, Hasher};
-
+use std::prelude::v1::*;
 pub struct TokenTreeHelper<'a>(pub &'a TokenTree);
 
 impl<'a> PartialEq for TokenTreeHelper<'a> {

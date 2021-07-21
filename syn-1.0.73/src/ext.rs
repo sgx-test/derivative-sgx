@@ -8,7 +8,7 @@ use crate::parse::{ParseStream, Result};
 use crate::sealed::lookahead;
 use crate::token::CustomToken;
 use proc_macro2::Ident;
-
+use std::prelude::v1::*;
 /// Additional methods for `Ident` not provided by proc-macro2 or libproc_macro.
 ///
 /// This trait is sealed and cannot be implemented for types outside of Syn. It

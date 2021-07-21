@@ -4,7 +4,7 @@ use crate::fallback::{
 use crate::{Delimiter, Punct, Spacing, TokenTree};
 use std::char;
 use std::str::{Bytes, CharIndices, Chars};
-
+use std::prelude::v1::*;
 #[derive(Copy, Clone, Eq, PartialEq)]
 pub(crate) struct Cursor<'a> {
     pub rest: &'a str,

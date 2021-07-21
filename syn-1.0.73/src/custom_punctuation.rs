@@ -74,6 +74,7 @@
 ///     let _: PathSegments = syn::parse_str(input).unwrap();
 /// }
 /// ```
+use std::prelude::v1::*;
 #[macro_export]
 macro_rules! custom_punctuation {
     ($ident:ident, $($tt:tt)+) => {

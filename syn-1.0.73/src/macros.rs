@@ -1,3 +1,4 @@
+use std::prelude::v1::*;
 macro_rules! ast_struct {
     (
         [$($attrs_pub:tt)*]

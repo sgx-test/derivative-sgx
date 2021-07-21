@@ -1,6 +1,6 @@
 use proc_macro2::TokenStream;
 use quote::ToTokens;
-
+use std::prelude::v1::*;
 pub struct TokensOrDefault<'a, T: 'a>(pub &'a Option<T>);
 
 impl<'a, T> ToTokens for TokensOrDefault<'a, T>

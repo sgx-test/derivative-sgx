@@ -103,6 +103,7 @@
 /// #     proc_macro::TokenStream::new()
 /// # }
 /// ```
+use std::prelude::v1::*;
 #[macro_export]
 #[cfg_attr(doc_cfg, doc(cfg(all(feature = "parsing", feature = "proc-macro"))))]
 macro_rules! parse_macro_input {

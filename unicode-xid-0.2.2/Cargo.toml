@@ -34,7 +34,8 @@ version = "0.3"
 
 [features]
 bench = []
-default = []
+default = ["mesalock_sgx"]
 no_std = []
+mesalock_sgx = ["sgx_tstd"]
 [badges.travis-ci]
 repository = "unicode-rs/unicode-xid"

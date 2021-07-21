@@ -2,7 +2,7 @@ use attr;
 use proc_macro2;
 use syn;
 use syn::spanned::Spanned as SynSpanned;
-
+use std::prelude::v1::*;
 #[derive(Debug)]
 pub struct Input<'a> {
     pub attrs: attr::Input,

@@ -1,3 +1,4 @@
+use std::prelude::v1::*;
 #[cfg(feature = "fold")]
 pub mod fold {
     use crate::fold::Fold;

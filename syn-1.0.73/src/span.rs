@@ -1,5 +1,5 @@
 use proc_macro2::Span;
-
+use std::prelude::v1::*;
 pub trait IntoSpans<S> {
     fn into_spans(self) -> S;
 }

@@ -2,7 +2,7 @@ use super::*;
 use crate::derive::{Data, DataEnum, DataStruct, DataUnion, DeriveInput};
 use crate::punctuated::Punctuated;
 use proc_macro2::TokenStream;
-
+use std::prelude::v1::*;
 #[cfg(feature = "parsing")]
 use std::mem;
 

@@ -1,6 +1,6 @@
 use super::*;
 use crate::punctuated::Punctuated;
-
+use std::prelude::v1::*;
 ast_struct! {
     /// Data structure sent to a `proc_macro_derive` macro.
     ///

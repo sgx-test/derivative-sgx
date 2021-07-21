@@ -4,7 +4,7 @@ use ast;
 use attr;
 use bound;
 use syn;
-
+use std::prelude::v1::*;
 /// Make generic with all the generics in the input, plus a bound `T: <trait_path>` for each
 /// generic field type that will be shown.
 pub fn build_impl_generics<F, G, H>(

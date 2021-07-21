@@ -1,3 +1,4 @@
+use std::prelude::v1::*;
 pub fn skip(mut s: &str) -> &str {
     'skip: while !s.is_empty() {
         let byte = s.as_bytes()[0];

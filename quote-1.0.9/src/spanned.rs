@@ -1,6 +1,6 @@
 use crate::ToTokens;
 use proc_macro2::{Span, TokenStream};
-
+use std::prelude::v1::*;
 pub trait Spanned {
     fn __span(&self) -> Span;
 }
